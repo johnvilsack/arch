@@ -99,6 +99,7 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
+defaults write com.apple.Accessibility KeyRepeatEnabled -bool 0
 
 ###############################################################################
 # Energy saving                                                               #
@@ -171,7 +172,7 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 #defaults write com.apple.finder ShowStatusBar -bool true
 
 # Finder: show path bar
-defaults write com.apple.finder ShowPathbar -bool true
+defaults write com.apple.finder ShowPathbar -bool false
 
 # Display full POSIX path as Finder window title
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
