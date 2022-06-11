@@ -4,4 +4,5 @@ mkdir /mnt/@/0
 btrfs subvolume create /mnt/@/0/snapshot
 btrfs subvolume create /mnt/@vm
 mkdir /mnt/.snapshots
+btrfs subvolume set-default /mnt
 umount /mnt
